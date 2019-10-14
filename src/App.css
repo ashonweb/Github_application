@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+input {
+  padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    display: block;
+    width: 50%;
+}
+
+.button {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  display: block;
+  width: 50%;
+  cursor: pointer;
+  background: #307FCD;
+
+}
+.button:focus {
+  outline: 1px solid #307FCD;
+}
+.myform{
+  margin: 10% 15%;
+}
+.username{
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-bottom: 16px;
+  display: block;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.search {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  display: block;
+  width: 15%;
+  cursor: pointer;
+  background: #307FCD;
+}
+.search:focus {
+  outline: 1px solid #307FCD;
+}
