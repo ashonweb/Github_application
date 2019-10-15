@@ -3,7 +3,8 @@ const INITIAL_STATE ={
   isLoggedIn : true,
   isLoading : false,
   isError : false,
-  ErrorMessage : ""
+  ErrorMessage : "",
+  userlist : [{}]
 }
 
 export const searchReducer  =(state=INITIAL_STATE,action) =>{
@@ -17,6 +18,7 @@ export const searchReducer  =(state=INITIAL_STATE,action) =>{
       return{
         ...state,
         isLoading:false,
+        userlist:action.payload,
       }
     case ACTION_ITEMS.SEARCH_FAILURE:
       return{
