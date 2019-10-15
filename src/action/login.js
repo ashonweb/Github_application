@@ -28,7 +28,7 @@ export const loginUserAction = (username,password,history) =>{
 
 export const logoutAction = () =>{
   store.dispatch ({
-    type : ACTION_ITEMS.LOGOUT
+    type: ACTION_ITEMS.LOGOUT
   })
   localStorage.removeItem('loggedIn');
 }
