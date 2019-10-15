@@ -32,8 +32,13 @@ class SearchUser extends Component {
 
       return (
         <>
-          <input className="username"type="text" value={this.state.username} onChange={this.onChange} placeholder="Enter the user name"/>
-          <button  class="search" onClick = {this.handleclick} value="Login">Search</button> 
+        <form onSubmit={this.handleclick}>
+          <input className="username" type="text" value={this.state.username} onChange={this.onChange} title="please enter the user name which needs to be searched" placeholder="Enter the user name" required/>
+          {/* <button  class="search" onClick = {this.handleclick} value="Login">Search</button>  */}
+          <input class="search" type = "submit" value="search" />
+        </form>
+          {console.log(userlist,"userlist")}
+          {Array.isArray(userlist)? console.log("ddashdjd"):null}
           {userlist.map((user,i)=>(
             <div className="searchcss">
               <div className="columnfirst">

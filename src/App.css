@@ -42,6 +42,8 @@ input {
   width: 50%;
   cursor: pointer;
   background: #307FCD;
+  color: white;
+    font-weight: 800;
 
 }
 .button:focus {
@@ -75,6 +77,8 @@ input {
   width: 15%;
   cursor: pointer;
   background: #307FCD;
+  color: white;
+    font-weight: 800;
 }
 .search:focus {
   outline: 1px solid #307FCD;
@@ -82,83 +86,99 @@ input {
 .searchcss {
   display: flex;
   justify-content: space-evenly;
+  margin:50px;
 }
 .columnfirst{
   border: 1px solid black;
   display: inline-block;
   vertical-align: top;
     box-sizing: border-box;
-    width: 500px;
-    /* height: 535px; */
-    margin:30px 30px 0;
-    background-image:linear-gradient(0deg, rgb(140, 65, 211) 0px, rgb(116, 74, 145))
+    height: fit-content;
+    border-radius: 50%;
+    width: 300px;
+     height: 300px;
+     border: 1px solid transparent;
+    /* margin:30px 30px 0;
+    background-image:linear-gradient(0deg, rgb(140, 65, 211) 0px, rgb(116, 74, 145)) */ 
 
 }
-.columnsecond{
+/* .columnsecond{
   border: 1px solid black;
   display: inline-block;
   vertical-align: top;
     box-sizing: border-box;
     width: auto;
-    /* height: 535px; */
       margin:30px 30px 0;
       background-image:linear-gradient(0deg, rgb(140, 65, 211) 0px, rgb(116, 74, 145))
+} */
+.columnsecond{
+  border: 1px solid black;
+  display: inline-block;
+  vertical-align: top;
+    box-sizing: border-box;
+    /* width: auto; */
+    /* height: 535px; */
+      /* margin:30px 30px 0; */
+      /* background-image:linear-gradient(0deg, rgb(140, 65, 211) 0px, rgb(116, 74, 145)) */
 }
 
 
-.attributes1{
-  background-image:linear-gradient(0deg,  rgb(58, 211, 185) 0px,rgb(121, 163, 163) );
 
-  margin:50px ;
+.attributes1{
+  /* background-image:linear-gradient(0deg,  rgb(58, 211, 185) 0px,rgb(121, 163, 163) ); */
+
+  margin:15px ;
   padding:15px;
   width:500px; 
   border-radius:5px;
 }
 
 .attributes2{
-  background-image:linear-gradient(0deg,  rgb(211, 55, 55) 0px,rgb(228, 46, 13) );
+  /* background-image:linear-gradient(0deg,  rgb(211, 55, 55) 0px,rgb(228, 46, 13) ); */
 
-  margin:50px ;
+  margin:15px ;
   padding:15px;
   width:500px; 
   border-radius:5px;
 }
 .attributes3{
-  background-image:linear-gradient(0deg,  rgb(25, 58, 150) 0px,rgb(156, 142, 240) );
+  /* background-image:linear-gradient(0deg,  rgb(25, 58, 150) 0px,rgb(156, 142, 240) ); */
 
-  margin:50px ;
+  margin:15px ;
   padding:15px;
   width:500px; 
   border-radius:5px;
 }
 .attributes4{
-  background-image:linear-gradient(0deg,  rgb(209, 137, 89) 0px,rgba(218, 120, 8, 0.884) );
+  /* background-image:linear-gradient(0deg,  rgb(209, 137, 89) 0px,rgba(218, 120, 8, 0.884) ); */
 
-margin:50px ;
+margin:15px ;
   padding:15px;
   width:500px; 
   border-radius:5px;
 }
 .attributes5{
-  background-image:linear-gradient(0deg,  rgb(69, 204, 28) 0px,rgb(127, 194, 121) );
+  /* background-image:linear-gradient(0deg,  rgb(69, 204, 28) 0px,rgb(127, 194, 121) ); */
 
-  margin:50px ;
+  margin:15px ;
   padding:15px;
   width:500px; 
   border-radius:5px;
 }
-.imageperson {
+/* .imageperson {
   left: 0px;
   position: relative;
   
-}
+} */
 #output{
-position: absolute;
-height: 400px;
-width: 419px;
-margin: 14% 8%;
+/* position: absolute;
+margin: 14% 8%; 
+*/
+height: 300px;
+    width: 300px;
+border-radius: 50%;
 background-color: aliceblue;
-border:1px solid black;
+ border:1px solid black;
 
 /* background-image: url("https://cdn.pixabay.com/photo/2013/07/13/12/07/avatar-159236_640.png"); */
 

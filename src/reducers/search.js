@@ -4,7 +4,7 @@ const INITIAL_STATE ={
   isLoading : false,
   isError : false,
   ErrorMessage : "",
-  userlist : [{}]
+  userlist : [{}],
 }
 
 export const searchReducer  =(state=INITIAL_STATE,action) =>{
@@ -25,6 +25,7 @@ export const searchReducer  =(state=INITIAL_STATE,action) =>{
         ...state,
         isError:true,
         ErrorMessage:action.payload,
+       
       }
     default:
       return state;
