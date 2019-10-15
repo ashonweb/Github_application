@@ -1,6 +1,11 @@
 import React,{Component} from 'react';
 import {searchUserAction} from './action/search'
 import {connect} from 'react-redux';
+import {Row,Col} from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+ import { library } from '@fortawesome/fontawesome-svg-core';
+ import { faGlasses, faUser,faIdCard, faSpinner , faLink,faHandPointLeft, faHandPointRight,faFolder} from '@fortawesome/free-solid-svg-icons'
+ import { faFemale,faMale,faTransgender,faGlobe,faLaugh,faHeartbeat,faUpload, } from '@fortawesome/free-solid-svg-icons'
 
 
 class SearchUser extends Component {
@@ -30,9 +35,35 @@ class SearchUser extends Component {
           <input className="username"type="text" value={this.state.username} onChange={this.onChange} placeholder="Enter the user name"/>
           <button  class="search" onClick = {this.handleclick} value="Login">Search</button> 
           {userlist.map((user,i)=>(
-           <div>
-             <li key={user.id}>{user.login}</li>
-           </div>
+            <div className="searchcss">
+              <div className="columnfirst">
+                <div class="imageperson" >
+                  <img id ="output"src={user.avatar_url} alt="" />
+                </div>
+              </div>
+              <div className="columnsecond">
+                <div className="attributes1">
+                  <FontAwesomeIcon icon={faIdCard} /> &nbsp;&nbsp;
+                  User id: {user.id}
+                </div>
+                <div className="attributes2">
+                  <FontAwesomeIcon icon={faUser} /> &nbsp;&nbsp;
+                  user Name: {user.login}
+                </div>
+                <div className="attributes3">
+                  <FontAwesomeIcon icon={faLink} /> &nbsp;&nbsp;
+                  User github url: <a href={user.html_url} target="_blank">{user.html_url}</a>
+                </div>
+                <div className="attributes4">
+                  <FontAwesomeIcon icon={faHandPointRight} /> &nbsp;&nbsp;
+                  User score:{user.score}
+                </div>
+                <div className="attributes5">
+                  <FontAwesomeIcon icon={faFolder} /> &nbsp;&nbsp;
+                  User Repo url: <a href={user.repos_url} target="_blank">{user.repos_url}</a>
+                </div>
+              </div>
+            </div>
           ))}
         </>
       )
