@@ -38,6 +38,7 @@ class LoginComponent extends Component {
     }
     return(
       <>
+      <h2>Github Search User Application</h2>
        <form className="myform"onSubmit={this.handleSubmit}>
         <label for ="email">
           Email Adress

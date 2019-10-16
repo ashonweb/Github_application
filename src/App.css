@@ -20,6 +20,11 @@
 .App-link {
   color: #09d3ac;
 }
+h2 {
+  position: absolute;
+    top: 5%;
+    left: 15%;
+}
 input {
   padding: 12px;
     border: 1px solid #ccc;
